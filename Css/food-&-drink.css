@@ -1,0 +1,69 @@
+/* start */
+
+/* hero */
+.hero {
+    background-image: url(../Images/steake-bg.jpg);
+}
+/* article */
+.article-content {
+    width: 65%;
+}
+.article-bg {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.article .line {
+    padding-bottom: 20px;
+}
+.article .subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.article-bg img {
+    width: 100%;
+    height: 100%;
+    object-position: left center;
+}
+.article:nth-child(4) .article-content {
+    width: calc(65% / 2);
+}
+.article:nth-child(4) .list {
+    justify-content: center;
+    row-gap: 15px;
+    font-size: 20px;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+.article:nth-child(4) .article-bg img {
+    object-position: center center;
+}
+
+/* Responsive */
+@media(max-width:426px) {
+    .list {
+        row-gap: 20px;
+    }
+}
+
+/* responsive height */
+@media (max-height:400px) {
+    .list {
+        row-gap: 20px;
+    }
+    .article-bg {
+        margin-bottom: 120px;
+    }
+    .article:nth-child(4) .article-bg {
+        margin-bottom: unset;
+    }
+}

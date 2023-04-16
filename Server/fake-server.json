@@ -1,0 +1,19 @@
+{
+    "post-items" : [
+        {
+            "src" : "Images/wine.jpg" ,
+            "title" : "sydney opening" ,
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin eu magna ut sollicitudin. Maecenas eu turpis enim. Phasellus sapien ligula, suscipit non urna elementum, dignissim [...]" ,
+            "target" : "sydney-opening.html" ,
+            "id" : 1
+        }
+        ,
+        {
+            "src" : "Images/pancake.jpg" ,
+            "title" : "london opening" ,
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin eu magna ut sollicitudin. Maecenas eu turpis enim. Phasellus sapien ligula, suscipit non urna elementum, dignissim [...]" ,
+            "target" : "london-opening.html" ,
+            "id" : 2
+        }
+    ]
+}

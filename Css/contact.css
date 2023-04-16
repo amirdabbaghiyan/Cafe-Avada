@@ -1,0 +1,78 @@
+/* hero */
+.hero {
+    min-height: 65vh;
+    background-image: url(../images/coffee-bg.webp);
+}
+/* parent form */
+.parent-form {
+    padding: 130px 15%;
+    background-color: var(--secondary-color-darker);
+    text-align: center;
+}
+.parent-form .title {
+    font-size: 55px;
+}
+.parent-form .line::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* form */
+.form {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 30px;
+}
+.form-item {
+    width: calc(50% - 2%);
+    padding: 10px;
+    background-color: var(--secondary-color-dark);
+    border: 1px solid #5d646b;
+    transition-duration: 0.5s;
+}
+.form-item:hover {
+    border-color: var(--secondary-color-darker);
+}
+::placeholder {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: rgb(161, 161, 161);
+}
+.form textarea ,
+.form .btn  {
+    width: 100%;
+}
+.form .loader {
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width:1024px){
+    .hero {
+        padding-top: 150px;
+    }
+}
+@media (max-width:768px){
+    /* main */
+    .form-item {
+        width: 100%;
+    }
+}
+@media (max-width:600px){
+    /* main */
+    .parent-form {
+        padding: 80px 15%;
+    }
+    .form {
+        margin-top: 50px;
+    }
+}
+@media (max-width:426px){
+    /* main */
+    .parent-form .title {
+        font-size: 35px;
+    }
+}

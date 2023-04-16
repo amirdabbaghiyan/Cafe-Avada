@@ -1,0 +1,30 @@
+/* start */
+
+/* section hero */
+.hero {
+    background-image: url(../images/burger-bg.jpg);
+}
+/* articles */
+.article-content ,
+.article-bg {
+    width: 50%;
+}
+.article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.subtitle {
+    margin-top: 10px;
+}
+.list-item {
+    padding-left: 13px;
+    margin-bottom: 10px;
+    transform: translateX(22px);
+    font-family: 'vollkorn';
+    color: var(--text-gray);
+}
+.list-item::marker{
+    content: "\e9d7";
+    font-family: 'icomoon';
+    font-size: 16px;
+    color: white;
+}
