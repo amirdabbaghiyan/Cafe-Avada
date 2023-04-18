@@ -190,6 +190,16 @@ textarea {
     color: var(--primary-color);
 }
 
+/* bread crump */
+.bread-crump {
+    font-family: 'vollkorn';
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.bread-crump .text-link {
+    text-transform: capitalize;
+}
+
 /* btn */
 .btn {
     display: inline-block;

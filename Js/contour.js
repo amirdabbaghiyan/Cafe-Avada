@@ -3,7 +3,7 @@ const parallaxEl = document.querySelector('.parallax');
 const numsEl = document.querySelectorAll('.parallax-num');
 
 // events
-numsEl.forEach((numEl)=>{
+for (const numEl of numsEl) {
     numEl.textContent = '0';
 
     const contour =(max , numPlus , index)=>{
@@ -28,4 +28,4 @@ numsEl.forEach((numEl)=>{
             contour(23732,37,3);
         }
     });
-});
+};

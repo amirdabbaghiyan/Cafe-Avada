@@ -2,7 +2,7 @@
 const galleryImgsEl = document.querySelectorAll('.gallery-img');
 
 // events
-galleryImgsEl.forEach((galleryImgEl)=>{
+for (const galleryImgEl of galleryImgsEl) {
     galleryImgEl.style.transform='translateX(-100%)';
     window.addEventListener('scroll',()=>{
         if(galleryImgEl.getBoundingClientRect().top <= window.innerHeight){
@@ -22,4 +22,4 @@ galleryImgsEl.forEach((galleryImgEl)=>{
             };
         };
     });
-});
+};

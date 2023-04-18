@@ -75,16 +75,16 @@
     <main id="main">
         <!-- hero -->
         <section class="hero">
-            <h1 class="title">monthly archives: </h1>
+            <h1 class="title" id="title">monthly archives: </h1>
 
             <p class="bread-crump">
-                <a href="index.html" class="text-link">home</a> || <a href="text-link"></a> <span></span>
+                <a href="index.html" class="text-link">home</a> &nbsp;||&nbsp; <a href="archive-years.html" class="text-link" id="year"></a> &nbsp;||&nbsp; <span id="month"></span>
             </p>
         </section>
         <!-- menu post -->
         <div class="menu-post">
             <!-- february 2015 -->
-            <div class="menu-hide">
+            <div class="menu-hide collection" data-target="february">
                 <h2 class="small-title">february 2015</h2>
                 <!-- item 01 -->
                 <div class="parent-item">
@@ -196,8 +196,8 @@
             </div>
 
             <!-- January 2015 -->
-            <div class="menu-hide">
-                <h2 class="small-title">January 2015</h2>
+            <div class="menu-hide collection" data-target="january">
+                <h2 class="small-title">january 2015</h2>
                 <!-- item 01 -->
                 <div class="parent-item">
                     <article class="post-item">
@@ -280,5 +280,6 @@
     
     <!-- js -->
     <script src="Js/repaet.js"></script>
+    <script src="Js/archives-months.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 const imgsEl = document.querySelectorAll('.article-img');
 
 // events
-imgsEl.forEach((imgEl)=>{
+for (const imgEl of imgsEl) {
     imgEl.style.transform='scale(0.5)';
     imgEl.style.opacity='0';
     window.addEventListener('scroll',()=>{
@@ -12,4 +12,4 @@ imgsEl.forEach((imgEl)=>{
             imgEl.style.opacity='1';
         };
     });
-});
+};

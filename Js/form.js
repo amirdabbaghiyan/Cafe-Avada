@@ -10,7 +10,7 @@ formEl.addEventListener('submit',(e)=>{
 });
 
 // form checkvalid
-formItemsEl.forEach((formItem)=>{
+for (const formItem of formItemsEl) {
     formItem.addEventListener('keyup',()=>{
         if(formItem.checkValidity() === false ){
             formItem.style.borderColor = "red";
@@ -31,7 +31,7 @@ formItemsEl.forEach((formItem)=>{
             formBtnEl.innerHTML="send";
         },800);
     });
-});
+};
 
 // date value dynamic
 let day = new Date().getDate();

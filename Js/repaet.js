@@ -3,7 +3,7 @@
 const bodyEl = document.querySelector('body');
 const siteLoaderEl = document.querySelector('.site-loader');
 // menu slide
-const headerEl = document.querySelector("#header");
+const headerEl = document.querySelector('#header');
 const heroEl = document.querySelector(".hero");
 // menu hamburger
 const menuHamburgerEl = document.querySelector('.menu-hamburger');
@@ -13,7 +13,7 @@ const menuItemsLinkEl = document.querySelectorAll('.menu-item-link');
 // hero content
 const heroContentsEl = document.querySelectorAll('.hero :nth-child(n)');
 // scroll up
-const scrollUpEl = document.querySelector(".scroll-up");
+const scrollUpEl = document.querySelector('.scroll-up');
 
 // events
 // site loader
@@ -28,11 +28,11 @@ document.onreadystatechange = ()=>{
         bodyEl.style.visibility = "visible";
 
         // hero content
-        heroContentsEl.forEach((heroContentEl) => {
+        for (const heroContentEl of heroContentsEl) {
             if (document.readyState == "complete") {
                 heroContentEl.style.display = 'initial';
             }
-        });
+        };
     };
 };
 
