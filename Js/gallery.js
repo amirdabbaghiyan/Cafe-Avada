@@ -3,14 +3,15 @@ const galleryImgsEl = document.querySelectorAll('.gallery-img');
 
 // events
 for (const galleryImgEl of galleryImgsEl) {
-    galleryImgEl.style.transform='translateX(-100%)';
+    galleryImgEl.style.transition='0s';
+    galleryImgEl.style.left='-100%';
     window.addEventListener('scroll',()=>{
         if(galleryImgEl.getBoundingClientRect().top <= window.innerHeight){
-            galleryImgEl.style.transition='0.5s ease-in';
+            galleryImgEl.style.transition='left 0.5s ease-in , transform 0.8s ease';
             galleryImgsEl[1].style.transitionDelay='0.5s';
             galleryImgsEl[2].style.transitionDelay='1s';
             galleryImgsEl[3].style.transitionDelay='1.5s';
-            galleryImgEl.style.transform='translateX(0)';
+            galleryImgEl.style.left='0';
 
             // debug
             setTimeout(()=>{
@@ -19,7 +20,7 @@ for (const galleryImgEl of galleryImgsEl) {
             // responsive
             if(window.innerWidth <= 425){
                 galleryImgEl.style.transitionDelay='0s';
-            };
-        };
+            }
+        }
     });
-};
+}

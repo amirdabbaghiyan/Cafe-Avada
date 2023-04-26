@@ -1,7 +1,6 @@
 // select
 const navLinksEl = document.querySelectorAll('.nav-link');
 const tabListsEl = document.querySelectorAll('.tab-list');
-const columnImgEl = document.querySelector('.column-img');
 
 // event
 // tab list
@@ -24,5 +23,5 @@ for (const navLinkEl of navLinksEl) {
                 }, 250);
             }
         });
-    };
-};
+    }
+}

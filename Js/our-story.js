@@ -1,6 +1,5 @@
 // selects
 const menuPostEl = document.querySelector('.menu-post');
-const menuHideEl = document.querySelector('.menu-hide');
 const pack01 = document.getElementById('pack-01');
 const btnEl = document.getElementById('btn-01');
 const moreEl = document.getElementById('more');
@@ -67,8 +66,8 @@ const getPostItems = async ()=>{
                             </div>
                         </div>
                     </article>
-                </div>`
-        };
+                </div>`;
+        }
         // create pack02 
         const pack02 = document.createElement('div');
         pack02.classList.add('menu-hide');
@@ -82,7 +81,7 @@ const getPostItems = async ()=>{
         pack02.appendChild(btn02El);
     
         // show pack02 
-        pack02.style.transitionDuration='0.5s'
+        pack02.style.transitionDuration='0.5s';
         pack02.style.opacity='0';
         setTimeout(()=>{
             pack02.style.opacity='1';
@@ -106,6 +105,6 @@ const getPostItems = async ()=>{
     }
 };
 
-moreEl.addEventListener('click',(e)=>{
+moreEl.addEventListener('click',()=>{
     getPostItems();
 });

@@ -7,6 +7,11 @@ const inputDateEl = document.querySelector('input[type="date"]');
 // events
 formEl.addEventListener('submit',(e)=>{
     e.preventDefault();
+
+    formBtnEl.innerHTML='<div class="loader"></div>';
+    setTimeout(()=>{
+        formBtnEl.innerHTML="send";
+    },800);
 });
 
 // form checkvalid
@@ -25,13 +30,8 @@ for (const formItem of formItemsEl) {
         } else{
             formItem.style.borderColor = "#5d646b";
         }
-
-        formBtnEl.innerHTML='<div class="loader"></div>';
-        setTimeout(()=>{
-            formBtnEl.innerHTML="send";
-        },800);
     });
-};
+}
 
 // date value dynamic
 let day = new Date().getDate();

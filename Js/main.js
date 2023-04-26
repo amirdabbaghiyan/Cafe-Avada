@@ -9,7 +9,6 @@ const heroEl = document.querySelector(".hero");
 const menuHamburgerEl = document.querySelector('.menu-hamburger');
 const menuHamburgerIconEl = document.querySelector('.icon-menu'); 
 const menuEl = document.querySelector('.menu');
-const menuItemsLinkEl = document.querySelectorAll('.menu-item-link');
 // hero content
 const heroContentsEl = document.querySelectorAll('.hero :nth-child(n)');
 // scroll up
@@ -32,8 +31,8 @@ document.onreadystatechange = ()=>{
             if (document.readyState == "complete") {
                 heroContentEl.style.display = 'initial';
             }
-        };
-    };
+        }
+    }
 };
 
 // menu slide
@@ -48,14 +47,14 @@ let scrollPrimary = window.scrollY;
             if(scrollPrimary <= scrollSecondary){
                 headerEl.classList.remove('slid-down');
                 headerEl.classList.add('slid-up');
-            };
+            }
             
             // scroll to up
             if(scrollPrimary >= scrollSecondary){
                 headerEl.classList.remove('slid-up');
                 headerEl.classList.add('slid-down');
-            };
-        };
+            }
+        }
 
         scrollPrimary = window.scrollY;
     });
@@ -69,7 +68,7 @@ const menuColumn = ()=>{
 
         if(num >= maxScroll){
             num = maxScroll;
-        };
+        }
 
         headerEl.style.top=`-${num}px`;
     });
@@ -77,20 +76,20 @@ const menuColumn = ()=>{
 // by responsive
 if (window.innerWidth <= 1024) {
     menuRow();
-};
+}
 if(window.innerWidth >= 1024){
     menuColumn();
-};
+}
 // by resize
 window.addEventListener('resize',()=>{
     if (window.innerWidth <= 1024) {
         menuRow();
         headerEl.classList.remove('off-slide');
-    };
+    }
     if(window.innerWidth >= 1024){
         menuColumn();
         headerEl.classList.add('off-slide');
-    };
+    }
 });
 
 // scroll up
@@ -105,7 +104,7 @@ window.addEventListener("scroll",()=>{
     } else{
         scrollUpEl.style.visibility="hidden";
         scrollUpEl.style.opacity='0';
-    };
+    }
 });
 
 // menu hamburger
@@ -130,4 +129,3 @@ window.addEventListener('resize',()=>{
         menuEl.classList.remove('show-menu');
     }
 });
-

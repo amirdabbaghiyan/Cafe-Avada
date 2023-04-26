@@ -1,5 +1,4 @@
 // selects
-const parallaxEl = document.querySelector('.parallax');
 const numsEl = document.querySelectorAll('.parallax-num');
 
 // events
@@ -28,4 +27,4 @@ for (const numEl of numsEl) {
             contour(23732,37,3);
         }
     });
-};
+}

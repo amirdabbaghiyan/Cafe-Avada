@@ -1,4 +1,5 @@
-/* start */
+/* START */
+
 
 /* hero */
 .hero {
@@ -195,10 +196,7 @@ input[type='search']::placeholder {
 .tweets {
     max-width: 100%;
     height: 980px;
-}
-.tweets::-webkit-scrollbar {
-    display: none;
-    background-color: red;
+    border: unset;
 }
 /* categories */
 .tagcloude {

@@ -10,6 +10,6 @@ for (const imgEl of imgsEl) {
             imgEl.style.transition='2s';
             imgEl.style.transform='scale(1)';
             imgEl.style.opacity='1';
-        };
+        }
     });
-};
+}
