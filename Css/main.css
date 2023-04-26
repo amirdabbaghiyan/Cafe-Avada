@@ -5,11 +5,11 @@
 /* unica one */
 @font-face {
     font-family: 'unica-one';
-    src: url('../fonts/unica-one/');
-    src: url('../fonts/unica-one/?#iefix') format('embedded-opentype'),
-         url('../fonts/unica-one/unicaone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/unica-one/unicaone-regular-webfont.woff') format('woff'),
-         url('../fonts/unica-one/unicaone-regular-webfont.ttf') format('truetype');
+    src: url('../Fonts/unica-one/unicaone-regular-webfont.eot');
+    src: url('../Fonts/unica-one/unicaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/unica-one/unicaone-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/unica-one/unicaone-regular-webfont.woff') format('woff'),
+         url('../Fonts/unica-one/unicaone-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
