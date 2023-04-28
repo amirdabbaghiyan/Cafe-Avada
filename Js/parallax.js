@@ -9,8 +9,8 @@ window.addEventListener('scroll',()=>{
     if(bgEl.parentElement.getBoundingClientRect().top < window.innerHeight && bgEl.parentElement.getBoundingClientRect().bottom > 0){
         if(scrollPrimary <= scrollSecondary){
             num--;
-            if(num < -209){
-                num = -209;
+            if(num < -190){
+                num = -190;
             }
         }
         if(scrollPrimary >= scrollSecondary){
