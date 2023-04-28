@@ -113,7 +113,7 @@ html {
     width: 40px;
     height: 40px;
     border: 2px solid var(--primary-color);
-    border-top: 2px solid #333;
+    border-top: 2px solid transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -649,7 +649,7 @@ textarea {
     }
     .menu-hamburger {
         display: flex;
-        padding: 25px 10px 10px 10px;
+        padding: 10px;
         font-size: 36px;
         cursor: pointer;
     } 
