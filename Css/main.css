@@ -54,6 +54,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* visibility: hidden; for site loader*/
 body ,
 html {
     visibility: hidden;
@@ -107,7 +108,7 @@ html {
 }
 .loader-img {
     width: 300px;
-    height: 250px;
+    margin-bottom: 30px;
     object-fit: contain;
 }
 .loader {
