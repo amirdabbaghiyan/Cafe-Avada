@@ -18,9 +18,9 @@ const scrollUpEl = document.querySelector('.scroll-up');
 // site loader
 document.onreadystatechange = ()=>{
     if (document.readyState !== "complete") {
-        bodyEl.style.visibility = "hidden";
         siteLoaderEl.style.display = "block";
         siteLoaderEl.style.visibility = "visible";
+        bodyEl.style.visibility = "hidden";
     } else {
         siteLoaderEl.style.opacity = "0";
         siteLoaderEl.style.visibility = "hidden";
